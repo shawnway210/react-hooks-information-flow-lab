@@ -3,7 +3,7 @@ import Item from "./Item";
 
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
-
+  const [onCategoryChange, setOnCategoryChange] = useState("Dairy")
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
   }
